@@ -28,18 +28,18 @@ In theory, you can also use [Jekyll hooks](https://jekyllrb.com/docs/plugins/hoo
 Below is our plot completing process:
 
 ```
-Plot1 used the dataset of “https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv”.
-
+Plot1 used the dataset of “https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv”. 
 In order to identify whether the location influenced the square footage of the buildings, 
-our group used “Square Footage” as the x-axis and “County” as the y-axis to make up a heat map.
-For the x-axis, we also use the count function to add up the total square footage varied from each county. 
-In the heatmap, we used the default color to present the visualization,
-because the default color is clear enough to show the relationship.
+our group used “Square Footage” as the x-axis and “County” as the y-axis to make up a heat map. 
+ For the x-axis, we also use the count function to add up the total square footage varied from each county. 
+In the heatmap, we used the default color to present the visualization, because the default color is clear enough to show the relationship.  
 In addition, we created a histogram based on the “Total Floors” to figure out the frequency of “Total Floors”. 
 And then we set interactivity between the heat map and histogram. 
-The interactivity was to what is the frequency of “Total Floors” once selected the location of “Square Footage” and “County”.
+The interactivity was to what is the frequency of “Total Floors” once selected the location of “Square Footage” and “County”. 
+The above-mentioned action was all worked on the jupyter notebook site, 
+which needed to transform into JSON file to function on the webpage. In order to show the interactivity on the webpage, 
+our group created a new JSON file for the output of the final visualization, then added it to the ¬¬-“dashboard.json”.
 ```
-
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
