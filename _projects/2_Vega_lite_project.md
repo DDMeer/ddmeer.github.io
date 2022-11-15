@@ -1,8 +1,9 @@
 ---
-name: Take 2
+name: Second plot display
 tools: [Python, HTML, vega-lite, Jekyll]
 image: assets/pngs/ppp2.png
-description: This is mutiple ways
+description: This is the second plot that uses vega-lite for interactive viz!
+
 custom_js:
   - vega.min
   - vega-lite.min
@@ -27,11 +28,17 @@ We can use a vegachart HTML tag like so:
 
 Below is our plot completing process:
 ```
-Plot2 used the dataset of “https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv”.
-Our group used the scatter plot to analyze the relationship between “County” and “Square Footage”. 
-We didn’t change the color of the scatter plot, because we think the default color perfectly showed the output understandable and clearly. 
-In order to show the visualization on git.io, plot2 needed to transform the output into a JSON file.
-Then we set up a new JSON file for plot 2, and added it to the scatter233.json. 
+This plot used the dataset of “https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv”.
+In order to identify whether the location influenced the square footage of the buildings,
+our group used “Square Footage” as the x-axis and “County” as the y-axis to make up a heat map.
+ For the x-axis, we also use the count function to add up the total square footage varied from each county.
+In the heatmap, we used the default color to present the visualization, because the default color is clear enough to show the relationship.
+In addition, we created a histogram based on the “Total Floors” to figure out the frequency of “Total Floors”.
+And then we set interactivity between the heat map and histogram.
+The interactivity was to what is the frequency of “Total Floors” once selected the location of “Square Footage” and “County”.
+The above-mentioned action was all worked on the jupyter notebook site,
+which needed to transform into JSON file to function on the webpage. In order to show the interactivity on the webpage,
+our group created a new JSON file for the output of the final visualization, then added it to the ¬¬-“dashboard.json”.
 
 ```
 
