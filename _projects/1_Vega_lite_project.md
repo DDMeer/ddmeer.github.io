@@ -20,7 +20,6 @@ Example comes from this [great blog post right here](https://blog.4dcu.be/progra
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/scatter233.json" style="width: 100%"></vegachart>
 
-In theory, you can also use [Jekyll hooks](https://jekyllrb.com/docs/plugins/hooks/) to do it, but I haven't figured out a way that looks nice yet.
 
 
 ## Search The Data & Methods
