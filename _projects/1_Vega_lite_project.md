@@ -36,7 +36,7 @@ Then we set up a new JSON file for this plot, and added it to the scatter233.jso
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
-{% include elements/button.html link="https://github.com/DDMeer/github.io/blob/ddm11/assets/json/finaldashboard.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/DDMeer/github.io/blob/ddm11/assets/json/jsonfinaldashboard.json" text="The Data" %}
 
 </div>
 
