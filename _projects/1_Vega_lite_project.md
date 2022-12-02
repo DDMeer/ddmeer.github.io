@@ -1,8 +1,8 @@
 ---
-name: First plot display
+name: Final Plot Display
 tools: [Python, HTML, vega-lite, Jekyll]
-image: assets/pngs/ppp1.png
-description: This is the first plot  that uses vega-lite for interactive viz!
+image: assets/pngs/final3.png
+description: This is our final plot!
 custom_js:
   - vega.min
   - vega-lite.min
@@ -11,7 +11,7 @@ custom_js:
 ---
 
 
-# Homework10 plot1
+# Final plot
 
 Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcub
 ```
