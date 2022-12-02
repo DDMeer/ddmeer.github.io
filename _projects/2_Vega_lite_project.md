@@ -28,7 +28,7 @@ Below is our plot completing process:
 ```
 
 ```
-<img src = "./assets/final2.png" width = "304" height = "208">
+<img src = "./assets/pngs/final2.png" width = "304" height = "208">
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
