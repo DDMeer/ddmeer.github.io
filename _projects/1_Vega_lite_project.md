@@ -27,11 +27,9 @@ Example comes from this [great blog post right here](https://blog.4dcu.be/progra
 Below is our plot completing process:
 
 ```
-This plot used the dataset of “https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv”.
-Our group used the scatter plot to analyze the relationship between “County” and “Square Footage”.
-We didn’t change the color of the scatter plot, because we think the default color perfectly showed the output understandable and clearly.
-In order to show the visualization on git.io, this plot needed to transform the output into a JSON file.
-Then we set up a new JSON file for this plot, and added it to the scatter233.json.
+One paragraph explaining how to use the dashboard you created, to help someone who is not an expert understand your dataset.
+
+As shown above, this is the dashboard we built for the National Immunization Survey dataset. On the left side, we have the United States geographical heat map with Vaccination Rate Estimates of each state as values display in different colors. The color atla besides the heat map indicates that the higher Vaccination Rate Estimates value, the deeper the color. On the right side, we have a histogram using the Mean of Estimate as the horizontal axis and the Race/Ethnicity group categories. To use the dashboard, we can choose a state by clicking on the dropbox, and the chosen state will highlight on the map while the right plot display its Vaccination Rate Estimates value of different race/ethnicity group interactively.
 ```
 <!-- these are written in a combo of html and liquid --> 
 
