@@ -19,7 +19,7 @@ Example comes from this [great blog post right here](https://blog.4dcu.be/progra
 We can use a vegachart HTML tag like so:
 
 <div>
-<img src = "../assets/pngs/final2.png" width = "304" height = "208">
+<img src = "../assets/pngs/final3.png" width = "304" height = "208">
 </div>
 
 ## Search The Data & Methods
