@@ -15,7 +15,7 @@ custom_js:
 
 Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcub
 ```
-<vegachart schema-url="{{ site.baseurl }}/assets/json/scatter233.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/finaldashboard.json" style="width: 100%"></vegachart>
 ```
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/finaldashboard.json" style="width: 100%"></vegachart>
