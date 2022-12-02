@@ -5,7 +5,7 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : group12-National_Immunization_Survey_Adult_COVID_Module__NIS-ACM___Vaccination_Status_and_Intent_by_Demographics 
+title               : group12 - Data Visualization: Vaccination Status and Intent by Demographics 
 description         : >-
                       Team member: Jiajun Mo; Qitian He; Zicheng Li; Yingjie Zhao
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
