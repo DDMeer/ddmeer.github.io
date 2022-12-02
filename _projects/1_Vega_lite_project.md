@@ -36,10 +36,11 @@ Then we set up a new JSON file for this plot, and added it to the scatter233.jso
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
-{% include elements/button.html link="https://github.com/DDMeer/github.io/blob/main/assets/json/finaldashboard.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/DDMeer/github.io/blob/ddm11/assets/json/finaldashboard.json" text="The Data" %}
+
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/DDMeer/github.io/blob/main/python_notebooks/Group-12-final-project_part2.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/DDMeer/github.io/blob/ddm11/python_notebooks/Group-12-final-project_part2.ipynb" text="The Analysis" %}
 </div>
 
