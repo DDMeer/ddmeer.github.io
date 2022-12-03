@@ -36,9 +36,6 @@ The title of our dataset is 'National Immunization Survey Adult COVID Module
 Below is our plot completing process:
 
 ```
-One paragraph explaining how to use the dashboard you created, to help someone who is not an expert 
-understand your dataset.
-
 As shown above, this is the dashboard we built for the National Immunization Survey dataset. On the left 
 side, we have the United States geographical heat map with Vaccination Rate Estimates of each state as
  values display in different colors. The color atla besides the heat map indicates that the higher
