@@ -27,7 +27,7 @@ Our group found two contextual visualizations online, the first one is COVID-19
  is COVID-19 and excess mortality in the United States: A county-level analysis.
  This visualization is akin to part of our dashboard, it not only focuses on the race
  group and region but also the physical conditions. 
-
+reference: https://datavisualizations.heritage.org/public-health/covid-19-deaths-by-age/
 ```
 # Plot2
 <img src = "../assets/pngs/final2.png" width = "504" height = "408">
@@ -41,6 +41,7 @@ The building dashboard is based on the National Immunization Survey dataset. On 
  axis and the Race/Ethnicity group categories. To use the dashboard, users can choose a state
  by clicking on the dropbox, and the selected state will be highlighted on the map while the
  right plot displays its Vaccina
+reference:https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003571
 ```
 <div class="left">
 {% include elements/button.html link="https://datavisualizations.heritage.org/public-health/covid-19-deaths-by-age/" text="The First Plot" %}
