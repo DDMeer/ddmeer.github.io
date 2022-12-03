@@ -7,7 +7,7 @@
 ### Site Settings ###
 title               : group12 Data Visualization:Vaccination Status and Intent by Demographics 
 description         : >-
-                      Team member: Jiajun Mo; Qitian He; Zicheng Li; Yingjie Zhao
+                      Team member: Andrew Mo; Qitian He; Zicheng Li; Yingjie Zhao
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
 repository          : https://github.com/DDMeer/github.io.git              # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)

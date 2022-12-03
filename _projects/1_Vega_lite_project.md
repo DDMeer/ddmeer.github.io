@@ -15,7 +15,16 @@ custom_js:
 
 Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcub
 ```
-<vegachart schema-url="{{ site.baseurl }}/assets/json/finaldashboard.json" style="width: 100%"></vegachart>
+Introduction
+
+The title of our dataset is 'National Immunization Survey Adult COVID Module
+ (NIS-ACM): Vaccination Status and Intent by Demographics'. So, basically, this is
+ a dataset about the survey results of the intent or status for immunization among adults.
+ The dataset contains a rich amount of records and categories. For example, the intent
+ or status of immunization by age groups, race or ethnicity groups, and geographies.
+ After doing some exploratory analysis, we found there are some interesting distributions
+ and statistics to study in this dataset. That is why we want to build a dashboard to
+ visualize some of the interesting statistical aspects we found about the data.
 ```
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/finaldashboard.json" style="width: 100%"></vegachart>
@@ -48,4 +57,4 @@ side, we have the United States geographical heat map with Vaccination Rate Esti
 <div class="right">
 {% include elements/button.html link="https://github.com/DDMeer/github.io/blob/ddm11/python_notebooks/Group-12-final-project_part2.ipynb" text="The Analysis" %}
 </div>
-
+·
