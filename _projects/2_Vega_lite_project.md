@@ -44,10 +44,10 @@ The building dashboard is based on the National Immunization Survey dataset. On 
  right plot displays its Vaccina
 ```
 <div class="left">
-{% include elements/button.html link="https://github.com/DDMeer/github.io/blob/main/assets/json/scatter233.json" text="The Data" %}
+{% include elements/button.html link="https://datavisualizations.heritage.org/public-health/covid-19-deaths-by-age/" text="The Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/DDMeer/github.io/blob/main/python_notebooks/group18-assignment10.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003571" text="The Analysis" %}
 </div>
 
