@@ -12,13 +12,11 @@ custom_js:
 ---
 
 
-# Final plot
+# Plot1
 
 <div>
 <img src = "../assets/pngs/final1.png" width = "504" height = "408">
 </div>
-
-## Search The Data & Methods
 
 
 ```
@@ -31,6 +29,7 @@ Our group found two contextual visualizations online, the first one is COVID-19
  group and region but also the physical conditions. 
 
 ```
+## Search The Data & Methods
 <img src = "../assets/pngs/final2.png" width = "504" height = "408">
 <!-- these are written in a combo of html and liquid --> 
 ```
