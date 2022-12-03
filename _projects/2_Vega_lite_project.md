@@ -1,5 +1,5 @@
 ---
-name: Other plots
+name: contextual visualizations
 tools: [Python, HTML, vega-lite, Jekyll]
 image: assets/pngs/final2.png
 description: This is the other plots help us to tell the story
@@ -12,7 +12,7 @@ custom_js:
 ---
 
 
-# Plot1
+# contextual visualizations1
 
 <div>
 <img src = "../assets/pngs/final1.png" width = "504" height = "408">
@@ -29,7 +29,7 @@ Our group found two contextual visualizations online, the first one is COVID-19
  group and region but also the physical conditions. 
 reference: https://datavisualizations.heritage.org/public-health/covid-19-deaths-by-age/
 ```
-# Plot2
+# contextual visualizations2
 <img src = "../assets/pngs/final2.png" width = "504" height = "408">
 <!-- these are written in a combo of html and liquid --> 
 ```
