@@ -14,12 +14,12 @@ custom_js:
 
 # Final plot
 
-## Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb).
+# Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb).
 
 We can use a vegachart HTML tag like so:
 
 <div>
-<img src = "../assets/pngs/final3.png" width = "304" height = "208">
+<img src = "../assets/pngs/final1.png" width = "504" height = "408">
 </div>
 
 ## Search The Data & Methods
@@ -35,7 +35,7 @@ Our group found two contextual visualizations online, the first one is COVID-19
  group and region but also the physical conditions. 
 
 ```
-<img src = "../assets/pngs/final2.png" width = "304" height = "208">
+<img src = "../assets/pngs/final2.png" width = "504" height = "408">
 <!-- these are written in a combo of html and liquid --> 
 ```
 The building dashboard is based on the National Immunization Survey dataset. On the
