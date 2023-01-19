@@ -43,6 +43,7 @@ The building dashboard is based on the National Immunization Survey dataset. On 
  right plot displays its Vaccina
 reference:https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003571
 ```
+<vegachart schema-url="{{ site.baseurl }}/assets/json/bar_plot.json" style="width: 100%"></vegachart>
 <div class="left">
 {% include elements/button.html link="https://datavisualizations.heritage.org/public-health/covid-19-deaths-by-age/" text="The First Plot" %}
 </div>
