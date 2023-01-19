@@ -13,7 +13,7 @@ custom_js:
 
 
 # contextual visualizations1
-
+<vegachart schema-url="{{ site.baseurl }}/assets/json/finaldashboard_phev.json" style="width: 100%"></vegachart>
 <div>
 <img src = "../assets/pngs/final1.png" width = "504" height = "408">
 </div>
