@@ -27,7 +27,7 @@ The title of our dataset is 'National Immunization Survey Adult COVID Module
  visualize some of the interesting statistical aspects we found about the data.
 ```
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/finaldashboard.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/finaldashboard_bev.json" style="width: 100%"></vegachart>
 
 
 
