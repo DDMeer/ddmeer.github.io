@@ -18,7 +18,7 @@ custom_js:
 <img src = "../assets/pngs/final1.png" width = "504" height = "408">
 </div>
 
-
+<vegachart schema-url="{{ site.baseurl }}/assets/json/finaldashboard_bev.json" style="width: 100%"></vegachart>
 ```
 Our group found two contextual visualizations online, the first one is COVID-19
  Deaths by Age, which is built by a bar chart. The x-axis represents the number
