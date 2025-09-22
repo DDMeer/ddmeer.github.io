@@ -1,0 +1,46 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ '/' | relative_url }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+
+      <a class="sidebar-nav-item{% if page.url == '/about/' %} active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
+
+
+
+
+
+  
+
+
+
+      <a class="sidebar-nav-item" href="{{ '/files/paper.pdf' | relative_url }}" download="paper.pdf" type="application/pdf">Download</a>
+
+
+
+      
+      <a class="sidebar-nav-item{% if page.url == '/github-project/' %} active{% endif %}" href="{{ '/github-project/' | relative_url }}">GitHub project</a>
+
+      {% comment %}
+      如果以后想自动遍历其它页面，可把上面改成循环，并过滤掉这四个固定入口：
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.layout == "page" and node.title and node.title != "Home" and node.title != "About" and node.title != "Download" and node.title != "GitHub project" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endfor %}
+      {% endcomment %}
+
+    </nav>
+
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+  </div>
+</div>

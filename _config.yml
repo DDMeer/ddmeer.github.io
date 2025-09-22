@@ -1,0 +1,41 @@
+# # Dependencies
+# markdown:         redcarpet
+# highlighter:      pygments
+
+# # Permalinks
+# permalink:        pretty
+# relative_permalinks: true
+
+# # Setup
+# title:            Hyde
+# tagline:          'A Jekyll theme'
+# description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content.'
+# url:              https://ddmeer.github.io
+# baseurl:          /
+
+# author:
+#   name:           'Yingjie Zhao'
+#   url:           
+
+# paginate:         
+
+# # Custom vars
+# version:          2.1.0
+
+# github:
+#   repo:           
+
+
+# 基本信息
+title: DDMeer
+description: >-
+  My personal site
+url: "https://ddmeer.github.io"
+baseurl: ""   # 必须是空字符串，个人主页才能正确链接
+
+# 构建相关
+markdown: kramdown
+permalink: pretty
+
+# 如果以后想分页，可以加上这一行
+# paginate: 5

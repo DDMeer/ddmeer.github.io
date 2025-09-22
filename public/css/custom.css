@@ -1,0 +1,24 @@
+/* 左侧栏背景色（窄屏时顶栏同样生效） */
+.sidebar {
+  background-color: #1f3a5f;      /* 改成你喜欢的颜色 */
+}
+
+/* 左侧栏中的文字/副标题/链接颜色，保持对比度 */
+.sidebar .sidebar-about h1,
+.sidebar .lead,
+.sidebar a,
+.sidebar .sidebar-nav-item {
+  color: #e6efff;                 /* 浅色字体 */
+}
+
+/* 当前菜单高亮和 hover 状态 */
+.sidebar .sidebar-nav-item.active,
+.sidebar .sidebar-nav-item:hover {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* 页脚那行（© …）颜色淡一点 */
+.sidebar footer, .sidebar p {
+  color: rgba(230,239,255,.7);
+}

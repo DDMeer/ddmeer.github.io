@@ -1,0 +1,66 @@
+---
+layout: page
+title: 404
+permalink: /404.html
+---
+
+<h1 style="margin-bottom:.25rem">404 – Page not found</h1>
+<p style="color:#777;margin-top:0">Oops, the page you’re looking for doesn’t exist or has moved.</p>
+
+<div style="margin:1.25rem 0 1.75rem 0; padding:1rem; border:1px solid #eee; border-radius:10px;">
+  <p style="margin:.25rem 0 .75rem 0">Try one of these:</p>
+  <div style="display:flex; gap:.5rem; flex-wrap:wrap">
+    <a class="btn" href="{{ '/' | relative_url }}">← Back to Home</a>
+    <a class="btn" href="{{ '/about/' | relative_url }}">About / Poster</a>
+    <a class="btn" href="{{ '/files/paper.pdf' | relative_url }}" download="paper.pdf">Download Paper</a>
+    <a class="btn" href="{{ '/github-project/' | relative_url }}">GitHub Project</a>
+  </div>
+</div>
+
+<h3>Search this site</h3>
+<form id="site-search" action="https://duckduckgo.com/" method="get" style="margin:.5rem 0 2rem 0;">
+  <input type="text" name="q" placeholder="Search…" style="padding:.6rem .8rem; width: min(600px, 100%); border:1px solid #ddd; border-radius:8px;">
+  <input type="hidden" name="sites" value="{{ site.url }}{{ site.baseurl }}">
+  <button class="btn" type="submit" style="margin-left:.4rem">Search</button>
+  <div style="color:#999; font-size:.9rem; margin-top:.25rem">
+    Tip: we’ll search only <code>{{ site.url }}{{ site.baseurl }}</code>
+  </div>
+</form>
+
+<div id="autorb" style="font-size:.95rem; color:#777">
+  You’ll be redirected to <a href="{{ '/' | relative_url }}">Home</a> in <span id="sec">6</span>s.
+  <button id="cancel" style="margin-left:.6rem; border:none; background:none; color:#4078c0; cursor:pointer; padding:0">Cancel</button>
+</div>
+
+<style>
+.btn {
+  border:1px solid #ccc;
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-block;
+}
+.btn:hover { background:#f5f5f5 }
+</style>
+
+<script>
+(function () {
+  // 自动返回倒计时（可取消）
+  var s = 6, secEl = document.getElementById('sec'), timer = setInterval(function(){
+    s--; secEl.textContent = s;
+    if (s <= 0) { clearInterval(timer); window.location.href = "{{ '/' | relative_url }}"; }
+  }, 1000);
+  document.getElementById('cancel').addEventListener('click', function(e){
+    e.preventDefault(); clearInterval(timer);
+    document.getElementById('autorb').textContent = 'Auto-redirect cancelled.';
+  });
+
+  // DuckDuckGo 站内搜索：把输入拼成 `site:domain query`
+  var form = document.getElementById('site-search');
+  form.addEventListener('submit', function(e){
+    var q = form.querySelector('input[name="q"]');
+    var site = "{{ site.url }}{{ site.baseurl }}".replace(/^https?:\/\//,'').replace(/\/$/,'');
+    q.value = "site:" + site + " " + q.value;
+  });
+})();
+</script>

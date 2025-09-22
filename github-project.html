@@ -1,0 +1,70 @@
+---
+layout: page
+title: GitHub project
+permalink: /github-project/
+hide_title: true
+---
+
+<!-- <h1>GitHub Project</h1> -->
+<p>Below is the README of my repository:</p>
+
+<div id="readme" style="min-height:120px">Loading README…</div>
+
+<p style="margin-top:1rem">
+  <a class="btn" id="repoLink" href="#" target="_blank" rel="noopener">Open on GitHub</a>
+</p>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+
+  const user = "DDMeer";
+  const repo = "ddmeer.github.io";
+
+  // main/master 都试一下
+  const branches = ["main","master"];
+  const webUrl = `https://github.com/${user}/${repo}`;
+  document.getElementById("repoLink").href = webUrl;
+
+  function absolutizeLinks(container, branch) {
+    const rawBase = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/`;
+
+    container.querySelectorAll("img").forEach(img => {
+      if (!/^https?:\/\//i.test(img.src)) img.src = rawBase + img.getAttribute("src");
+      img.style.maxWidth = "100%";
+      img.style.height = "auto";
+    });
+    container.querySelectorAll("a").forEach(a => {
+      const href = a.getAttribute("href");
+      if (!href || href.startsWith("#")) return;
+      if (!/^https?:\/\//i.test(href)) a.href = rawBase + href;
+    });
+  }
+
+  async function loadReadme() {
+    for (const br of branches) {
+      const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/${br}/README.md`;
+      try {
+        const r = await fetch(rawUrl, {cache: "no-store"});
+        if (!r.ok) continue;
+        const md = await r.text();
+        const html = marked.parse(md);
+        const box = document.getElementById("readme");
+        box.innerHTML = html;
+        absolutizeLinks(box, br);
+        return;
+      } catch(e) { /* try next */ }
+    }
+    document.getElementById("readme").innerHTML =
+      `Failed to load README. Please visit <a href="${webUrl}" target="_blank" rel="noopener">${webUrl}</a>.`;
+  }
+  loadReadme();
+</script>
+
+<style>
+#readme h1, #readme h2, #readme h3 { margin-top:1.1em }
+.btn {
+  border:1px solid #ccc; padding:10px 14px; border-radius:10px;
+  text-decoration:none; display:inline-block;
+}
+.btn:hover { background:#f5f5f5 }
+</style>
