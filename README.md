@@ -62,7 +62,7 @@ bundle exec jekyll serve
 
 ```
 
-## License
+## 🪪 License
 本站点最初基于 [Hyde](https://github.com/poole/hyde) 主题修改。
 
 
